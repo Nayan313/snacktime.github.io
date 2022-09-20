@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Lobster&family=Open+Sans:ital,wght@0,300;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Lobster&family=Open+Sans:ital,wght@0,300;0,600;1,500&display=swap');
+
+
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+}
+
+
+
+.nayan{
+    color: aqua;
+    position: fixed;
+    bottom: 10px;
+}
+.logo{
+    color: antiquewhite;
+    font-size: 35px;
+
+}
+.logo span{
+    color: darkseagreen;
+}
+.header{
+    background: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: white;
+    height: 50px;
+    
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
+.header .navbar a:hover{
+    color: lightsalmon;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    text-decoration: none;
+}
+
+.header .icons div{
+    color: lightsalmon;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.header .icons div:hover{
+    color: deepskyblue;
+}
+.icons{
+    color: aqua;
+}
+.header .search-form{
+    position: absolute;
+    top:115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(pexels-daniel-reche-1556688.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    font-family: 'Kumar One Outline', cursive;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:lightsalmon;
+    text-transform: uppercase;
+}
+
+.btn5{
+    position: absolute;
+    top: 220px;
+    right: 100px;
+    text-decoration: none;
+    display: inline-block;
+    padding:.6rem 2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    font-family: 'Josefin Sans', sans-serif;;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.about .row .content h3 span{
+    color:white;
+    text-transform: uppercase;
+    
+}
+.about .row .content h3{
+    font-size: 15px;
+    color:aqua;
+    font-family: 'Josefin Sans', sans-serif;;
+
+  
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+   
+    line-height: 1.8;
+}
+
+
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border: aqua;    
+}
+
+.menu .box-container .box img{
+    height: 25vh;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:#fff;
+}
+
+.menu .box-container .box:hover > *{
+    color: black;
+}
+
+.btn4{
+    
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn4:hover{
+    letter-spacing: .2rem;
+}
+.contact .row{
+    display: flex;
+    background: black;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 40%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:  darkseagreen;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
+    width: 100%;
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 25px;
+    padding:.6rem 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 90%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+
+.btn1{
+    text-decoration: none;
+    display: inline-block;
+    padding:.6rem 2rem;
+    font-size: 1.7rem;
+    background-color: red;
+    color: aqua;
+    font-family: 'Josefin Sans', sans-serif;;
+    cursor: pointer;
+
+}
+
+
+
+.btn2{
+    position: absolute;
+    left: 45%;
+    text-decoration: none;
+    display: inline-block;
+    padding:.6rem 2rem;
+    font-size: 1.7rem;
+    background-color: red;
+    color: aqua;
+    font-family: 'Josefin Sans', sans-serif;;
+    cursor: pointer;
+
+}
+
+
+.footer{
+    background:var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: yellowgreen;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footer .share a:hover{
+    background-color:  white;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+    
+    text-decoration: none;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:var(--border);
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;;
+    text-decoration: none;
+}
+
+.footer .links a:hover{
+    background: darkseagreen;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span{
+    color: coral;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
