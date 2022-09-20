@@ -40,6 +40,8 @@ body{
     background-color: black;
 }
 
+
+
 .nayan{
     color: aqua;
     position: fixed;
@@ -66,7 +68,7 @@ body{
     z-index: 1000;
     border-bottom: white;
     height: 50px;
-    width: 100%;
+    
 }
 
 .header .navbar a{
@@ -88,8 +90,8 @@ body{
     color: lightsalmon;
     cursor: pointer;
     font-size: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .header .icons div:hover{
@@ -98,6 +100,43 @@ body{
 .icons{
     color: aqua;
 }
+.header .search-form{
+    position: absolute;
+    top:115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+
+
 .home{
     min-height: 100vh;
     display: flex;
@@ -168,18 +207,17 @@ body{
     
 }
 .about .row .content h3{
-    font-size: 3rem;
+    font-size: 15px;
     color:aqua;
-    position: absolute;
-    left: 45%;
+    font-family: 'Josefin Sans', sans-serif;;
 
+  
 }
 
 .about .row .content p{
     font-size: 1.6rem;
     color:#ccc;
-    position: absolute;
-    left: 45%;
+   
     line-height: 1.8;
 }
 
